@@ -1,7 +1,7 @@
 import { string, number, StringType } from "randomill-ts";
 import React from "react";
 
-export default function RandomillString({ type, gibberishLength=36 }: { type: StringType, gibberishLength?: number }) {
+export default function RandomillString({ type=StringType.Gibberish, gibberishLength=36 }: { type?: StringType, gibberishLength?: number }) {
     return (
         <>
             {string(type, gibberishLength)}

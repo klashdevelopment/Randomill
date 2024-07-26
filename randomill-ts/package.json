@@ -1,0 +1,24 @@
+{
+  "name": "randomill-ts",
+  "version": "1.0.2",
+  "description": "Randomill is a giant library of random data for (most) programming languages.",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "tsc && node ../examples/js/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klashdevelopment/randomill.git"
+  },
+  "author": "GavinGoGaming",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/klashdevelopment/randomill/issues"
+  },
+  "homepage": "https://github.com/klashdevelopment/randomill#readme",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}

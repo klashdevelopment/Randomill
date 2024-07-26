@@ -1,0 +1,19 @@
+{
+  "name": "randomill-react",
+  "version": "1.0.1",
+  "description": "A toolbox of React components for Randomill.",
+  "main": "src/index.tsx",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "KlashDevelopment",
+  "license": "GPL-2.0",
+  "dependencies": {
+    "randomill-ts": "^1.0.0",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}

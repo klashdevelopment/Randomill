@@ -18,6 +18,15 @@ export enum StringType {
     PhoneNumber
 }
 
+export const data = {
+    cities,
+    countries,
+    firstNames,
+    lastNames,
+    phoneCodes,
+    states
+}
+
 function gibberish(length: number) {
     return Array.from({ length }, () => Math.floor(Math.random() * 36).toString(36)).join('');
 }
@@ -30,6 +39,10 @@ function gibberishNumbers(length: number) {
 }
 function randomOption<T>(options: T[]): T {
     return options[Math.floor(Math.random() * options.length)];
+}
+
+export function number(min=0, max=1): number {
+    return Math.random() * (max - min) + min;
 }
 
 export function string(type=StringType.Gibberish, gibberishLength=36): string {
@@ -59,12 +72,9 @@ export function string(type=StringType.Gibberish, gibberishLength=36): string {
     }
 }
 
-export function number(min=0, max=1): number {
-    return Math.random() * (max - min) + min;
-}
-
 export default {
     string,
     number,
-    StringType
+    StringType,
+    data
 }
